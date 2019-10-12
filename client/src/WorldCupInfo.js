@@ -5,7 +5,7 @@ class WorldCupInfo extends React.Component {
     constructor() {
         super();
         this.state={
-            players: {}
+            players: []
         }
     }
     componentDidMount() {
@@ -14,7 +14,7 @@ class WorldCupInfo extends React.Component {
             .then(res => {
                 // console.log(res.data)
                 this.setState({players: res.data})
-                // console.log(this.state.players)
+                console.log(this.state.players)
             })
             .catch(err => {
                 console.log(`Error: ${err}`)
@@ -24,7 +24,7 @@ class WorldCupInfo extends React.Component {
     render() {
         return (
             <div>
-                {this.state.players.map(player => (
+                {this.state.players.map((player) => (
                     <>
                         <h2>{player.name}</h2>
                         <h3>{player.country}</h3>
