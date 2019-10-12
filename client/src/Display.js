@@ -1,8 +1,11 @@
 import React from 'react';
+import WorldCupInfo from './WorldCupInfo';
 
 const Display = (props) => {
     return (
-        <div>Sprint 10/11</div>
+        <div>
+            <WorldCupInfo />
+        </div>
     )
 }
 
