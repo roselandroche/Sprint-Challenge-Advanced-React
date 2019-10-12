@@ -18,6 +18,8 @@ function App() {
           <input 
             type='checkbox' 
             checked={darkMode} 
+            value={darkMode}
+            onChange={toggleMode}
             onClick={toggleMode} 
             className={darkMode ? 'toggle toggled': 'toggle'}
           />

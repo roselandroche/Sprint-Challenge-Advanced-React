@@ -12,9 +12,7 @@ class WorldCupInfo extends React.Component {
         axios
             .get('http://localhost:5000/api/players')
             .then(res => {
-                // console.log(res.data)
                 this.setState({players: res.data})
-                console.log(this.state.players)
             })
             .catch(err => {
                 console.log(`Error: ${err}`)

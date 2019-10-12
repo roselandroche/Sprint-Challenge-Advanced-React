@@ -9,8 +9,6 @@ it('renders without crashing', () => {
   const wrapper = rtl.render(<App />)
   const element = wrapper.getByText(/women\'s world cup players/i)
   expect(element).toBeVisible()
+  expect(element).toBeTruthy()
 });
 
-// it('contains United States', () => {
-//   expect(isCountry('United States')).toBeTruthy();
-// });

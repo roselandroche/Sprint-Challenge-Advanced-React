@@ -1,7 +1,7 @@
 import React from 'react';
 import WorldCupInfo from './WorldCupInfo';
 
-const Display = (props) => {
+const Display = () => {
     return (
         <div>
             <WorldCupInfo />
