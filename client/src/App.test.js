@@ -12,3 +12,8 @@ it('renders without crashing', () => {
   expect(element).toBeTruthy()
 });
 
+it('has dark mode', () => {
+  const wrapper = rtl.render(<App />)
+  const element = wrapper.getByText(/dark mode/i)
+  expect(element).toBeVisible()
+})
